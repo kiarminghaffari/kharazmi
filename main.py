@@ -54,7 +54,7 @@ df['economic']=df['economic'].map({'کم':0,'متوسط':1,'زیاد':2})
 
 #st.write(df)
 
-ds = pd.read_excel(r"C:\Users\DEAR USER\Desktop\208331495453976.xls")
+ds = pd.read_excel("208331495453976.xls")
 
 
 ds['1.Gender'] = ds['1.Gender'].map({'M':1,'F':0})
