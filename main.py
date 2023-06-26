@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import sklearn
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
@@ -72,10 +71,8 @@ ds = ds.dropna()
 X=ds.drop(columns=['14.Dejection'])
 y=ds[['14.Dejection']]
 
-x_train,x_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=42)
-
 rfc = RandomForestClassifier(criterion = 'entropy', random_state = 42)
-rfc.fit(x_train, y_train)
+rfc.fit(X, y)
 
 prediction = rfc.predict(df)
 
@@ -89,7 +86,6 @@ if prediction == 0:
     from PIL import Image
     photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۰۴۳۰۶۲۹.jpg")
     st.image(photo)
-    st.balloons()
 elif prediction == 1:
     st.title('متوسط')
     from PIL import Image
