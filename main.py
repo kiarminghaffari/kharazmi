@@ -84,10 +84,11 @@ if prediction == 0:
     st.title('کم')
     st.write('تبریک میگم شما در وضعیت خوبی هستید ')
     from PIL import Image
-    photo = Image.open("imojipng.parspng.com-4.png")
+    photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۰۴۳۰۶۲۹.jpg")
     st.image(photo)
 elif prediction == 1:
     st.title('متوسط')
+    st.write('شما گاهی اوقات برون گرا،مهربان و اجتماعی هستید،در حالی که در مواقع دیگر درون گرا،محتاط و باوقار هستید و امنیت یکی از اهداف اصلی در زندگی شماست،بیشتر مراقب خودتون باشید ')
     from PIL import Image
     photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۰۹۴۴۷۳۴.jpg")
     st.image(photo)
