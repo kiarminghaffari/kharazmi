@@ -84,7 +84,7 @@ if prediction == 0:
     st.title('کم')
     st.write('تبریک میگم شما در وضعیت خوبی هستید ')
     from PIL import Image
-    photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۰۴۳۰۶۲۹.jpg")
+    photo = Image.open("imojipng.parspng.com-4.png")
     st.image(photo)
 elif prediction == 1:
     st.title('متوسط')
