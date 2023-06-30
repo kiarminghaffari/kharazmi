@@ -82,7 +82,7 @@ st.subheader('(کم ,متوسط,زیاد):نتیجه')
 
 if prediction == 0:
     st.title('کم')
-    st.write('تبریک میگم شما در وضعیت خوبی هستید ')
+    st.write('تمایل دارید منتقد خود باشید و به خاطر افکار مستقل تان به خود افتخار میکنید، تبریک میگم شما در وضعیت خوبی هستید ')
     from PIL import Image
     photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۰۴۳۰۶۲۹.jpg")
     st.image(photo)
@@ -94,6 +94,7 @@ elif prediction == 1:
     st.image(photo)
 elif prediction == 2:
     st.title('زیاد')
+    st.write('ظاهر شما منظم و کنترل شده به نطر می رسد،اما در درون به نگرانی و تزلزل گرایش دارید،یه آینده ای بهتر امیدوار باشید،میتوانید با استفاده از همین برنامه چک کنید که اگر چه جیزی را تغییر دهید بهتر خواهید شد ')
     from PIL import Image
     photo = Image.open("InShot_۲۰۲۳۰۶۲۶_۱۴۱۳۳۱۴۴۶.jpg")
     st.image(photo)
